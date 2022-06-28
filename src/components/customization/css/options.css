@@ -1,7 +1,7 @@
 .ct-declaration {
   width: 100%;
-  text-align: center;
-  padding-top: var(--ct-seperator-padding);
+  margin-left: var(--ct-default-padding);
+  padding-bottom: var(--ct-seperator-padding);
   font-size: var(--ct-text-font-size);
 }
 

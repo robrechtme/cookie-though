@@ -11,13 +11,7 @@ interface Props {
   onToggle: (key: number) => void;
 }
 
-const Options: FunctionalComponent<Props> = ({
-  isOpen,
-  options,
-  cookiePolicy,
-  essentialLabel,
-  onToggle,
-}) => {
+const Options: FunctionalComponent<Props> = ({ isOpen, options, essentialLabel, onToggle }) => {
   const cookies = options.map((option, i) => (
     <Option
       key={i}
@@ -28,18 +22,7 @@ const Options: FunctionalComponent<Props> = ({
     />
   ));
 
-  return (
-    <div className="ct-policies">
-      {cookies}
-      {cookiePolicy && (
-        <div className="ct-declaration">
-          <a tabIndex={0} href={cookiePolicy.url} role="link">
-            {cookiePolicy.label}
-          </a>
-        </div>
-      )}
-    </div>
-  );
+  return <div className="ct-policies">{cookies}</div>;
 };
 
 export default Options;
