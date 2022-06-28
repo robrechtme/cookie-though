@@ -13,7 +13,7 @@ interface Props extends Config {
 }
 
 export const CONTAINER_WIDTHS = ['360px', '380px', '425px', '500px'];
-export const CONTAINER_BOTTOMS = ['-300px', '-350px', '-400px', '-500px'];
+export const CONTAINER_BOTTOMS = ['-400px', '-400px', '-400px', '-500px'];
 export const MOBILE_CONTAINER_BOTTOMS = ['-400px', '-500px', '-650px'];
 
 /**
